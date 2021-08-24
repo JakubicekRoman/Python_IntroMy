@@ -31,10 +31,10 @@ plt.figure()
 plt.imshow(greyTrain,cmap='gray')
 plt.show()
 
-histogram, bin_edges = np.histogram(grey, bins=256, range=(0, 1))
-plt.figure()
-plt.plot(bin_edges[0:-1], histogram)  # <- or here
-plt.show()
+# histogram, bin_edges = np.histogram(grey, bins=256, range=(0, 1))
+# plt.figure()
+# plt.plot(bin_edges[0:-1], histogram)  # <- or here
+# plt.show()
 
 BWTrain = greyTrain < 0.7
 BWTrain = BWTrain[:,:,2]
